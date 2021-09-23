@@ -214,6 +214,14 @@ header,
     padding-top: 10px;
     line-height: 350%;
 }
+.ct{
+    padding-top: 15px;
+}
+.counter-txt-l{
+    font-size: 30px;
+    padding-top: 31px;
+    line-height: 350%;
+}
 .main-title-block{
     font-size: 40px;
     padding-bottom: 10px;
@@ -508,6 +516,12 @@ a:active, a:hover {
         padding-bottom: 230px!important;
         /* font-size: 35px; */
     }
+    .ct{
+        padding-top: 0px;
+    }
+    .counter-txt-l{
+        padding-top: 20px;
+    }
 
 }
 
@@ -576,6 +590,7 @@ a:active, a:hover {
     .font-size-48 {
         font-size: 28px!important;
     }
+   
 }
 @media screen and (max-width: 990px) {
     .text-icon{
