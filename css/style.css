@@ -1,25 +1,70 @@
-html,
-body,
 header,
-.view {
-    height: 100%;
-}
-/* .intro-2 {
-    background: url("../image/zerkala_s_fatsetom.png")no-repeat center center;
-    background-size: cover;
-}
-.view{
-    margin-top: -36px;
+/* .view {
+    margin-bottom: 100px;
 } */
 
-.navbar {
-    z-index: 1;
+.text-black{
+    color: #000;
 }
 
+.card {
+    border: 0;
+    -webkit-box-shadow: 0 10px 15px -3px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%)!important;
+}
+.g-4, .gy-4 {
+    --mdb-gutter-y: 1.5rem;
+}
+
+.g-4, .gx-4 {
+    --mdb-gutter-x: 1.5rem;
+}
+@media (min-width: 768px){
+    .row-cols-md-2>*, .row-cols-md-3 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+    }
+}
+
+@media (min-width: 768px){
+    .row-cols-md-2 {
+        width: 50%;
+    } 
+}
+.row-cols-1 {
+    width: 100%;
+}
+.row-cols-1, .row-cols-auto {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+.col {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+}
+.navbar {
+    z-index: 100;
+}
+.font-size-18{
+    font-size: 18px;
+}
+.font-size-48{
+    font-size: 48px!important;
+}
+.font-size-28{
+    font-size: 28px!important;
+}
+.font-size-25{
+    font-size: 25px!important;
+}
 .carousel-caption {
   padding-bottom: 350px!important;
-  font-size: 35px;
+  /* font-size: 35px; */
 }
+
 .nav-item {
     padding-right: 5px;
 }
@@ -37,9 +82,12 @@ header,
     -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%) !important;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%) !important;
 }
+.card-box-shadow{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 35px rgba(32, 176, 231, 0.23);
+    border-radius: 7px;
+}
 .team{
-    padding: 50vh 0;
-    height: 100vh;
     box-sizing: border-box;
 }
 .containerss{
@@ -69,6 +117,7 @@ header,
     border-radius: .25rem;
     margin-bottom: 20px;
 }
+
 .mgt50px {
     margin-top: 50px;
 }
@@ -159,8 +208,16 @@ header,
     font-weight: 400;
 }
 .counter-txt{
-    font-size: 20px;
-    padding-top: 30px;
+    font-size: 30px;
+    padding-top: 10px;
+    line-height: 350%;
+}
+.main-title-block{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+.description-main-block{
+    font-size: 25px;
 }
 
 .page-screen-head__title-wrap {
@@ -188,6 +245,7 @@ header,
     .content .box {
        width: 100%;
     }
+    
 }
 
 @media screen and (min-width: 1200px){
@@ -430,12 +488,23 @@ a:active, a:hover {
     }
 
 }
-@media only screen and (max-width: 1199px) and (min-width: 767px){
+@media only screen and (max-width: 1199px) and (min-width: 769px){
     .headline__add-text:nth-child(1) {
         margin-top: 2px;
     }
     .headline__add-text {
         margin-left: 52px;
+    }
+    .main-title-block{
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    .description-main-block{
+        font-size: 20px;
+    }
+    .carousel-caption {
+        padding-bottom: 230px!important;
+        /* font-size: 35px; */
     }
 
 }
@@ -451,9 +520,14 @@ a:active, a:hover {
     .text-footer-first{
         display: none;
     }
+    .column {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
-/*height: 170px;*/
-/*margin-top: 20px;*/
+
 @media screen and (max-width: 766px) {
     .page-screen-head__title-wrap{
         top: 60%;
@@ -487,10 +561,27 @@ a:active, a:hover {
     .facet-image{
         display: block;
     }
+    .carousel-item {
+        padding-top: 40px;
+    }
+    .row-cols-1 {
+        width: 110%;
+    }
+    .carousel-caption {
+        padding-bottom: 150px!important;
+        /* font-size: 35px; */
+    }
 }
 @media screen and (max-width: 990px) {
     .text-icon{
         padding-left: 28px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-caption {
+        padding-bottom: 114px!important;
     }
 
 }

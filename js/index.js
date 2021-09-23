@@ -15,5 +15,4 @@
 //     updateCounter();
 // });
 
-$('.single-item').slick();
 
