@@ -2,7 +2,9 @@ header,
 /* .view {
     margin-bottom: 100px;
 } */
-
+.bg-first-block {
+    background: url(../image/czech.jpg) no-repeat;
+}
 .text-black{
     color: #000;
 }
@@ -570,6 +572,9 @@ a:active, a:hover {
     .carousel-caption {
         padding-bottom: 150px!important;
         /* font-size: 35px; */
+    }
+    .font-size-48 {
+        font-size: 28px!important;
     }
 }
 @media screen and (max-width: 990px) {

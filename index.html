@@ -40,16 +40,16 @@
                           <a class="nav-link" href="about_us.html">О нас</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="">Учеба</a>
+                        <a class="nav-link" href="#study">Учеба</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="document.html">Документы</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#work">Наши услуги</a>
+                          <a class="nav-link" href="#services">Наши услуги</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#work">Отзывы</a>
+                        <a class="nav-link" href="#reviews">Отзывы</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="#contact">Контакты</a>
@@ -57,13 +57,13 @@
                   </ul>
                 <ul class="nav text-center">
                   <li class="nav-item">
-                    <a class="nav-link" href="tel:+996556646646 " style="font-size: 18px;">+996556646646 </a>
+                    <a class="nav-link" href="tel:+996556646646 " style="font-size: 18px;padding-left: 65px;">+996556646646 </a>
                   </li>
                 </ul>
               </div>
         </div>
     </nav>
-    <div id="carouselExampleCaptions" class="carousel slide pt-5 mt-3" data-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide pt-5 mt-3 d-md-block d-none" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -103,7 +103,11 @@
     </div>
   </header>
 
-  <section class="team">
+  <section class="bg-first-block d-none d-sm-block">
+
+  </section>
+
+  <section class="team" id="study">
     <div class="containerss">
       <div class="row justify-content-center text-center">
         <div class="col-12">
@@ -165,8 +169,8 @@
     </div>
   </section>
   
-  <section>
-    <div class="container pt-lg-5">
+  <section id="services">
+    <div class="container pt-lg-5" >
       <div class="row justify-content-center">
         <div class="col-12 py-3 text-center">
           <h2 class="font-weight-bold py-2">Наши услуги</h2>
@@ -262,7 +266,7 @@
 
 <!-- carousel reviews -->
 
-  <section class="pt-5 mt-5">
+  <section class="pt-5 mt-5" id="reviews">
     <div class="container mt-5">
       <div class="row text-center pb-5">
         <div class="col-12">
@@ -309,7 +313,7 @@
     </div>
   </section>
 
-  <div class="container my-5 py-5 z-depth-1 " id="contact">
+  <div class="container my-5 py-5 z-depth-1">
     <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text ">
         <style>
             .map-container {
@@ -356,7 +360,7 @@
     </section>
   </div>
 
-  <footer class="page-footer font-small  bg-black pt-5 mt-5">
+  <footer id="contact" class="page-footer font-small bg-black pt-5 mt-5">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-3 text-footer-first">
@@ -379,7 +383,7 @@
                 </div>
                 <div class="text-lg-right pt-3 text-icon">
                     <a class="fb-ic">
-                        <a href=""><i class="fab fa-facebook-f footer-link  mr-md-5 mr-3 fa-2x bg-icon"> </i></a>
+                        <a href=""><i class="fab fa-facebook-f footer-link mr-md-5 mr-3 fa-2x bg-icon"> </i></a>
                     </a>
                     <a class="tw-ic">
                         <a href="https://api.whatsapp.com/send?phone=996556646646"><i class="fab fa-whatsapp footer-link   mr-md-5 mr-3 fa-2x bg-icon"> </i></a>
@@ -489,17 +493,17 @@
           }
       }
   </script>
+
   <script type="text/javascript">
-    $(document).on('ready', function () {
-        $(".regular").slick({
-            dots: true,
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3
+    $(document).ready(function(){
+        $("#pick").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 400);
         });
     });
   </script>
-
 
   <script >
     $('#accept').click(function () {
