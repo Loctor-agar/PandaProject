@@ -1,14 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
 header,
 /* .view {
     margin-bottom: 100px;
 } */
 .bg-first-block {
     background: url(../image/czech.jpg) no-repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mobile-version-main{
+    padding-top: 140px;
+    color: white;
+    text-align: center;
+}
+.btn-orange{
+    background-color: #ff6400;
+    border-color: #ff6400;
+    color: white;
+    padding: 10px;
+}
+.navigation-link{
+    position: relative;
+}
+.navigation-link:hover:after {
+    transform: scaleX(1);
+}
+.reviews-block{
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+}
+.navigation-link:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ff6400;
+    transform: scaleX(0);
+    transition: transform 0.2s;
+}
+.btn-orange:hover{
+    color: white!important;
 }
 .text-black{
     color: #000;
 }
-
+.main-section {
+    min-height: 100vh!important;
+}
+.ul-about-us {
+    list-style: none;
+    padding-left: 0px;
+}
+.li-about-us:before{
+    content: '✓';
+    padding-right: 10px;
+    font-size: 25px;
+}
 .card {
     border: 0;
     -webkit-box-shadow: 0 10px 15px -3px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%);
@@ -223,7 +276,7 @@ header,
     line-height: 350%;
 }
 .main-title-block{
-    font-size: 40px;
+    font-size: 38px;
     padding-bottom: 10px;
 }
 .description-main-block{
@@ -318,7 +371,7 @@ header,
     margin-left: 120px;
 }
 .btn-tempo{
-    background-color: #ec463f!important;
+    background-color: #ff6400!important;
     color: white!important;
     padding: 12px 63px;
     transition: 0.5s;
@@ -523,6 +576,7 @@ a:active, a:hover {
         padding-top: 20px;
     }
 
+
 }
 
 
@@ -589,6 +643,17 @@ a:active, a:hover {
     }
     .font-size-48 {
         font-size: 28px!important;
+    }
+    .main-title-block {
+        font-size: 29px;
+        padding-bottom: 10px;
+    }
+    .description-main-block {
+        font-size: 17px;
+    }
+    .btn-orange {
+        margin-top: 15;
+        margin-bottom: 20px;
     }
    
 }

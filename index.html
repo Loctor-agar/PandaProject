@@ -15,11 +15,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 </head>
 <body>
   <header>
@@ -34,30 +30,30 @@
                 <div class="collapse navbar-collapse justify-content-center pt-2" id="navbarSupportedContent">
                   <ul class="nav navbar-nav mx-auto text-center align-items-center text-uppercase">
                       <li class="nav-item ">
-                          <a class="nav-link" href="index.html">Главная </a>
+                          <a class="nav-link navigation-link" href="index.html">Главная </a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="about_us.html">О нас</a>
+                          <a class="nav-link navigation-link" href="about_us.html">О нас</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#study">Учеба</a>
+                        <a class="nav-link navigation-link" href="#study">Учеба</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="document.html">Документы</a>
+                        <a class="nav-link navigation-link" href="document.html">Документы</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#services">Наши услуги</a>
+                          <a class="nav-link navigation-link" href="#services">Наши услуги</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#reviews">Отзывы</a>
+                        <a class="nav-link navigation-link" href="#reviews">Отзывы</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#contact">Контакты</a>
+                          <a class="nav-link navigation-link" href="#contact">Контакты</a>
                       </li>
                   </ul>
-                <ul class="nav text-center">
+                <ul class="nav text-center justify-content-center">
                   <li class="nav-item">
-                    <a class="nav-link" href="tel:+996556646646 " style="font-size: 18px;padding-left: 65px;">+996556646646 </a>
+                    <a class="nav-link" href="tel:+996556646646 " style="font-size: 18px;justify-content: center;">+996556646646 </a>
                   </li>
                 </ul>
               </div>
@@ -103,9 +99,45 @@
     </div>
   </header>
 
-  <section class="bg-first-block d-none d-sm-block">
-
+  <section class="bg-first-block d-lg-none d-md-none d-sm-block">
+    <div class="container main-section">
+      <div class="row">
+        <div class="col-12 mobile-version-main">
+          <h3 class="main-title-block">“Panda study” <br> Ваш навигатор в образовании за рубежом</h3>
+          <p class="description-main-block">ПОЛУЧИ УНИКАЛЬНУЮ ВОЗМОЖНОСТЬ УЧИТЬСЯ В ВУЗАХ разных стран </p>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <div class="counter-up pt-5 mt-5">
+    <div class="content">
+      <div class="box text-center d-flex justify-content-center numbers"">
+        <div class="d-flex">
+          <div class="counter pr-2" data-target="5">5 </div><span class="counter-txt">лет</span>
+        </div>
+        <div class="text mb-3">Опыта работы на рынке зарубежного образования</div>
+      </div>
+      <div class="box text-center d-flex justify-content-center numbers">
+        <div class="d-flex">
+          <div class="counter pr-2" data-target="95">95 </div><span class="counter-txt">%</span>
+        </div>
+        <div class="text mb-3">Cтудентов поступают в выбранную школу или в вуз</div>
+      </div>
+      <div class="box text-center d-flex justify-content-center numbers">
+        <div class="d-flex">
+          <div class="counter pr-2" data-target="66">66 </div><span class="counter-txt">%</span>
+        </div>
+        <div class="text mb-3">Cтудентов поступают в топ 10% учебных заведений мира</div>
+      </div>
+      <div class="box text-center d-flex justify-content-center numbers">
+        <div class="d-flex">
+          <div class="counter ct pr-2" data-target="97">97 </div><span class="counter-txt-l">%</span>
+        </div>
+        <div class="text mb-3">Учеников сдают международный экзамен на ожидаемый балл или выше</div>
+      </div>
+    </div>
+  </div>
 
   <section class="team" id="study">
     <div class="containerss">
@@ -179,37 +211,37 @@
       <div class="row text-center">
         <div class="col-lg-4 col-12 pb-3 ">
           <div class="py-2">
-            <img src="image/consultation (1).png" class="img-fluid" alt="">
+            <img class="w-50 h-50" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDY0IDY0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Y2lyY2xlIHI9IjMyIiBjeD0iMzIiIGN5PSIzMiIgZmlsbD0iIzAwMDAwMCIgc2hhcGU9ImNpcmNsZSIgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwwLDApIj48L2NpcmNsZT48ZyB0cmFuc2Zvcm09Im1hdHJpeCgwLjUsMCwwLDAuNSwxNi4wMDAwMDA5NTM2NzQzMTMsMTUuOTk5OTk5NzYxNTgxNDIxKSI+PGxpbmVhckdyYWRpZW50IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaWQ9IlNWR0lEXzFfIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjMyIiB4Mj0iMzIiIHkxPSI2MyIgeTI9IjEiPjxzdG9wIHN0b3Atb3BhY2l0eT0iMSIgc3RvcC1jb2xvcj0iIzlmMmZmZiIgb2Zmc2V0PSIwIj48L3N0b3A+PHN0b3Agc3RvcC1vcGFjaXR5PSIxIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBvZmZzZXQ9IjAiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTMgNDloNnY4aC0yYy0xLjEwMyAwLTIgLjg5Ny0yIDJ2NGgydi00aDZ2NGgydi00YzAtMS4xMDMtLjg5Ny0yLTItMmgtMnYtOGg2djExYzAgMS42NTQgMS4zNDYgMyAzIDNoMjRjMS42NTQgMCAzLTEuMzQ2IDMtM3YtMTFoNnY4aC0yYy0xLjEwMyAwLTIgLjg5Ny0yIDJ2NGgydi00aDZ2NGgydi00YzAtMS4xMDMtLjg5Ny0yLTItMmgtMnYtOGg2YzEuMTAzIDAgMi0uODk3IDItMnYtMmMwLTEuMTAzLS44OTctMi0yLTJoLTEuMDI2Yy42MzUtLjgzOCAxLjAyNi0xLjg3IDEuMDI2LTN2LTEzLjM5NWMwLTEuOTgzLS40NTgtMy45MTQtMS4zMjItNS42NzQgMS44ODItLjMyNCAzLjMyMi0xLjk1OCAzLjMyMi0zLjkzMSAwLTEuMDc2LS40MzYtMi4wOTUtMS4xODEtMi44MzYuNzY1LTEuMzIgMS4xODEtMi44MTkgMS4xODEtNC4zODYgMC00Ljg0LTMuOTM4LTguNzc4LTguNzc4LTguNzc4aC0zLjIyMmMtMi4yMDYgMC00IDEuNzk0LTQgNCAwIDEuMjQ5LjU4OCAyLjM1MyAxLjQ4OCAzLjA4N2wtMS42NjEgNC4xNTQgMS4xNzMgMS4xNzN2LjU4NmMwIDIuNzU3IDIuMjQzIDUgNSA1djIuNzY0bC0xLjYxOCAzLjIzNmgtOS42NjFsLTMuMzc1LTEwLjEyNWMtLjM3NC0xLjEyMS0xLjQyLTEuODc1LTIuNjAyLTEuODc1LTEuNTEzIDAtMi43NDQgMS4yMzEtMi43NDQgMi43NDQgMCAuMjY3LjAzOS41MzIuMTE2Ljc4OGwyLjc5NiA5LjMyMWMtLjU2MS41NDUtLjkxMiAxLjMwNS0uOTEyIDIuMTQ3IDAgLjM1MS4wNjEuNjg3LjE3MSAxaC02LjE3MXYtMTBjMC0xLjEwMy0uODk3LTItMi0yaC04Yy0xLjEwMyAwLTIgLjg5Ny0yIDJ2NmgtNC4zODJsLTEuNjE4LTMuMjM2di0yLjc2NGMyLjc1NyAwIDUtMi4yNDMgNS01di0uNTg2bDEuMTczLTEuMTczLTEuODIyLTQuNTU2YzEuMDA2LS45MTYgMS42NDktMi4yMjIgMS42NDktMy42ODUgMC0xLjY1NC0xLjM0Ni0zLTMtM2gtNC4yMjJjLTQuODQgMC04Ljc3OCAzLjkzOC04Ljc3OCA4Ljc3OCAwIDIuMzQ1LjkxMyA0LjU0OSAyLjU3MSA2LjIwN2wxLjQyOSAxLjQyOXYyLjI5Yy0xLjMxIDIuMDY4LTIgNC40NDgtMiA2LjkwMnYxMy4zOTRjMCAxLjEzLjM5MSAyLjE2MiAxLjAyNiAzaC0xLjAyNmMtMS4xMDMgMC0yIC44OTctMiAydjJjMCAxLjEwMy44OTcgMiAyIDJ6bTE3IDEyYy0uNTUxIDAtMS0uNDQ5LTEtMXYtMWg0Ljc2NGwuNzYzLjM4MWMuMjkyLjE0Ni40NzMuNDM5LjQ3My43NjUgMCAuNDcxLS4zODMuODU0LS44NTQuODU0em0tMTUtMzQuMzk1YzAtLjQ3OC4wMzYtLjk1MS4wOTctMS40MmwyLjQ1OSA0LjMwM2MuNTMzLjkzMyAxLjUzMSAxLjUxMiAyLjYwNSAxLjUxMmguODM5djZoLTZ6bTggOC4zOTVoMTh2MjZoLTQuMTQ1Yy4wODYtLjI3MS4xNDUtLjU1NS4xNDUtLjg1NCAwLTEuMDg3LS42MDQtMi4wNjYtMS41NzgtMi41NTNsLS40MjItLjIxMXYtMTMuMzgyYzAtMy44Ni0zLjE0LTctNy03aC01em00MC44MzktNGMxLjA3NCAwIDIuMDcyLS41NzkgMi42MDQtMS41MTJsMi40NTktNC4zMDNjLjA2Mi40NjkuMDk4Ljk0My4wOTggMS40MnYxMC4zOTVoLTZ2LTZ6bS0yLjgzOSA2aC01Yy0zLjg2IDAtNyAzLjE0LTcgN3YxMy4zODJsLS40MjMuMjExYy0uOTczLjQ4Ny0xLjU3NyAxLjQ2Ni0xLjU3NyAyLjU1MyAwIC4yOTkuMDU5LjU4My4xNDUuODU0aC00LjE0NXYtMjZoMTh6bS02IDIwaC00di0xM2MwLTEuNTkyLjc2Mi0yLjk5NyAxLjkyNi0zLjkxM2wyLjA3NCA0LjE0OXptLTEgNGgtNC4xNDZjLS40NzEgMC0uODU0LS4zODMtLjg1NC0uODU0IDAtLjMyNi4xODEtLjYxOS40NzItLjc2NGwuNzY0LS4zODJoNC43NjR2MWMwIC41NTEtLjQ0OSAxLTEgMXptMTctMTRoLTE0di0yaDE0em0tMTQuMzgyLTQtMS45MDUtMy44MTFjLjQxMy0uMTExLjgzOS0uMTg5IDEuMjg3LS4xODloMTN2MWMwIDEuNjU0LTEuMzQ2IDMtMyAzem0xNC4zODItMjZjMCAxLjEwMy0uODk3IDItMiAydi0xLjU4NmwxLjQyOS0xLjQyOWMuMDU2LS4wNTYuMTA0LS4xMTcuMTU4LS4xNzQuMjU1LjM0MS40MTMuNzUxLjQxMyAxLjE4OXptLTEwLTE0aDMuMjIyYzMuNzM3IDAgNi43NzggMy4wNDEgNi43NzggNi43NzggMCAxLjgxMS0uNzA1IDMuNTEzLTEuOTg1IDQuNzkzbC0uNDM0LjQzNC0xLjA4My00Ljg3M2MtLjQxLTEuODQ0LTIuMDE2LTMuMTMyLTMuOTA1LTMuMTMyaC0yLjU5M2MtMS4xMDMgMC0yLS44OTctMi0ycy44OTctMiAyLTJ6bS0xIDExdi0xLjQxNGwtLjgyNy0uODI3IDEuMTMyLTIuODNjLjIyNy4wNDEuNDU3LjA3MS42OTUuMDcxaDIuNTkzYy45NDUgMCAxLjc0OC42NDQgMS45NTMgMS41NjZsMS40NTQgNi41NDR2MS45MjhjLS4xMjMtLjAxNC0uMjQ0LS4wMzgtLjM3MS0uMDM4aC0uMTY1Yy0uNTIgMC0xLjAxNy4xMjItMS40NjUuMzM4di0yLjMzOGgtMmMtMS42NTMgMC0yLjk5OS0xLjM0Ni0yLjk5OS0zem0yLjYxOCAxMyAyLjYyMS01LjI0MmMuMjM0LS40NjcuNzA0LS43NTggMS4yMjYtLjc1OGguMTY1Yy43NTUgMCAxLjM3LjYxNSAxLjM3IDEuMzcxIDAgLjIzOC0uMDYzLjQ3My0uMTgxLjY4bC0zLjExMiA1LjQ0NmMtLjE3Ny4zMS0uNTEuNTAzLS44NjguNTAzaC03LjgzOWMtLjU1MSAwLTEtLjQ0OS0xLTFzLjQ0OS0xIDEtMXptLTE0LjYxOCAwaDUuMTg0Yy0uMTEyLjMxNC0uMTg0LjY0OC0uMTg0IDFzLjA3Mi42ODYuMTg0IDFoLTUuMTg0Yy0uNTUxIDAtMS0uNDQ5LTEtMXMuNDQ5LTEgMS0xem0tMi45NjktMTEuMDQyYy0uMDItLjA3LS4wMzEtLjE0Mi0uMDMxLS4yMTQgMC0uNDExLjMzMy0uNzQ0Ljc0NC0uNzQ0LjMyIDAgLjYwNC4yMDQuNzA1LjUwOGwzLjE2MyA5LjQ5MmgtMS42MTJjLS4wODUgMC0uMTY1LjAxOC0uMjQ4LjAyNXptMTUuOTY5IDE1LjA0MnYyaC0zOHYtMnptLTI5LTRjLjU1MSAwIDEgLjQ0OSAxIDFzLS40NDkgMS0xIDFoLTF2LTJ6bTUgMmgtMnYtMTBoMnptLTQtMTB2MmgtNHYtMnptLTQgNGg0djIuMTg0Yy0uMzE0LS4xMTItLjY0OC0uMTg0LTEtLjE4NGgtM3ptMCA0djJoLTguODM5Yy0uMzU4IDAtLjY5LS4xOTMtLjg2OC0uNTA0bC0zLjExMy01LjQ0N2MtLjExOC0uMjA1LS4xOC0uNDQtLjE4LS42NzggMC0uNzU2LjYxNS0xLjM3MSAxLjM3MS0xLjM3MWguMTY1Yy41MjIgMCAuOTkyLjI5MSAxLjIyNi43NThsMi42MiA1LjI0MnptLTQuMTczLTE1LjI0MS0uODI3LjgyN3YxLjQxNGMwIDEuNjU0LTEuMzQ2IDMtMyAzaC0ydjIuMzM4Yy0uNDQ4LS4yMTYtLjk0NC0uMzM4LTEuNDY1LS4zMzhoLS4xNjRjLS4xMjcgMC0uMjQ4LjAyNC0uMzcxLjAzN3YtMS45MjdsMS40NTQtNi41NDRjLjIwNS0uOTIyIDEuMDA4LTEuNTY2IDEuOTUzLTEuNTY2aDEuNTkzYy41NjUgMCAxLjEtLjExNSAxLjYwNy0uMjg5em0tMTEuODI3LTEuOTgxYzAtMy43MzcgMy4wNDEtNi43NzggNi43NzgtNi43NzhoNC4yMjJjLjU1MSAwIDEgLjQ0OSAxIDEgMCAxLjY1NC0xLjM0NiAzLTMgM2gtMWMtMS4xMDMgMC0yLS44OTctMi0yaC0yYzAgMS4wNjIuNDIzIDIuMDIzIDEuMTAxIDIuNzM5LS43ODguNTU2LTEuMzc1IDEuMzg3LTEuNTk5IDIuMzkzbC0xLjA4MyA0Ljg3My0uNDM0LS40MzRjLTEuMjgtMS4yOC0xLjk4NS0yLjk4Mi0xLjk4NS00Ljc5M3ptMiAzMC4yMjJ2LTFoMTNjMi43NTcgMCA1IDIuMjQzIDUgNXYxM2gtNHYtMTIuNTg2bDEuNzA3LTEuNzA3LTEuNDE0LTEuNDE0LTEuNzA3IDEuNzA3aC05LjU4NmMtMS42NTQgMC0zLTEuMzQ2LTMtM3ptLTIgNWgxNHYyaC0xNHoiIGZpbGw9InVybCgjU1ZHSURfMV8pIiBkYXRhLW9yaWdpbmFsPSJ1cmwoI1NWR0lEXzFfKSIgc3R5bGU9IiI+PC9wYXRoPjwvZz48L3N2Zz4=" />
           </div>
           <h5 class="font-weight-bold">Полная консультация</h4>
         </div>
         <div class="col-lg-4 col-12 pb-3">
           <div class="py-2">
-            <img src="image/help.png" class="img-fluid" alt="">
+            <img class="w-50 h-50" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDY0IDY0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Y2lyY2xlIHI9IjMyIiBjeD0iMzIiIGN5PSIzMiIgZmlsbD0iIzAwMDAwMCIgc2hhcGU9ImNpcmNsZSI+PC9jaXJjbGU+PGcgdHJhbnNmb3JtPSJtYXRyaXgoMC41LDAsMCwwLjUsMTYuMDAwMDAwOTUzNjc0MzIsMTYpIj48bGluZWFyR3JhZGllbnQgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBpZD0iU1ZHSURfMV8iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMzIiIHgyPSIzMiIgeTE9IjYzIiB5Mj0iMSI+PHN0b3Agc3RvcC1vcGFjaXR5PSIxIiBzdG9wLWNvbG9yPSIjOWYyZmZmIiBvZmZzZXQ9IjAiPjwvc3RvcD48c3RvcCBzdG9wLW9wYWNpdHk9IjEiIHN0b3AtY29sb3I9IiNmZmZmZmYiIG9mZnNldD0iMCI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtNTYgMWMtMy44NTkgMC03IDMuMTQxLTcgN3Y0NC4yMzZsNC42NTggOS4zMTdjLjQ0Ny44OTIgMS4zNDUgMS40NDcgMi4zNDIgMS40NDdzMS44OTUtLjU1NSAyLjM0Mi0xLjQ0N2w0LjY1OC05LjMxN3YtNDQuMjM2YzAtMy44NTktMy4xNDEtNy03LTd6bTMuMDAzIDQ3Ljc5OC0xLjk5OCAxLjMzMy0uMDA1LTMzLjEzMWg0djMzLjEzem0tNC4wMDMtMzEuNzk4LjAwNSAzMy4xMzItMi4wMDItMS4zMzMtMi4wMDMgMS4zMzR2LTMzLjEzM3ptNi0yaC0xMHYtMmgxMHptLTQuNDQ3IDQ1LjY1N2MtLjIxMS40MjQtLjg5NS40MjMtMS4xMDUuMDAxbC00LjE1OC04LjMxNiAxLjcxNC0xLjE0MSAzLjAwMiAyLjAwMSAyLjk5OC0yIDEuNzA4IDEuMTR6bTQuNDQ3LTQ5LjY1N2gtMTB2LTNjMC0yLjc1NyAyLjI0My01IDUtNXM1IDIuMjQzIDUgNXptLTIwLTZoLTcuMTAxYy0uNDY1LTIuMjc5LTIuNDg1LTQtNC44OTktNHMtNC40MzQgMS43MjEtNC44OTkgNGgtNC4yMDJjLS40NjUtMi4yNzktMi40ODUtNC00Ljg5OS00cy00LjQzNCAxLjcyMS00Ljg5OSA0aC05LjEwMXY1OGgzOHYtNGg0YzIuMjA2IDAgNC0xLjc5NCA0LTR2LTRoLTZ6bS0zMCA0NnY0YzAgMS4xMDMtLjg5NyAyLTIgMnMtMi0uODk3LTItMnYtNDBoMzJ2MzZ6bTI4LTM4aC0zMnYtNmgxMC44MTZjLS40MTQgMS4xNjEtMS41MTQgMi0yLjgxNiAydjJjMi40MTQgMCA0LjQzNC0xLjcyMSA0Ljg5OS00aDExLjkxN2MtLjQxNCAxLjE2MS0xLjUxNCAyLTIuODE2IDJ2MmMyLjQxNCAwIDQuNDM0LTEuNzIxIDQuODk5LTRoNS4xMDF6bS0xMC0xMGMxLjMwMiAwIDIuNDAyLjgzOSAyLjgxNiAyaC01LjYzMWMuNDEzLTEuMTYxIDEuNTEzLTIgMi44MTUtMnptLTE0IDBjMS4zMDIgMCAyLjQwMi44MzkgMi44MTYgMmgtNS42MzFjLjQxMy0xLjE2MSAxLjUxMy0yIDIuODE1LTJ6bTIyIDU4aC0zNHYtNTRoMnY0OGMwIDIuMjA2IDEuNzk0IDQgNCA0aDI4em04LTZjMCAxLjEwMy0uODk3IDItMiAyaC0zMC41MzdjLjM0Mi0uNTg5LjUzNy0xLjI3Mi41MzctMnYtMmgzMnptLTgtMzh2MmgtMnYtMnptLTQgMmgtMTR2LTJoMTR6bS0yNCAyaDI4djJoLTI4em0wIDRoMjh2MmgtMjh6bTQgNmgtNHYtMmg0em0yLTJoMjJ2MmgtMjJ6bS0yIDRoMnYyaC0yem00IDBoMnYyaC0yem0tNiAyaC0ydi0yaDJ6bTEwIDE0aDE2di0xNmgtMTZ6bTItMTRoMTJ2MTJoLTEyem0tMTQgMmgxMHYyaC0xMHptMCA0aDEwdjJoLTEwem0wIDRoMTB2MmgtMTB6IiBmaWxsPSJ1cmwoI1NWR0lEXzFfKSIgZGF0YS1vcmlnaW5hbD0idXJsKCNTVkdJRF8xXykiIHN0eWxlPSIiPjwvcGF0aD48L2c+PC9zdmc+" />
           </div>
           <h5 class="font-weight-bold">Помощь в выборе университета/вуза</h4>
         </div>
         <div class="col-lg-4 col-12 pb-3">
          <div class="py-2">
-          <img src="image/letter.png" class="img-fluid" alt="">
+          <img class="w-50 h-50" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDY0IDY0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Y2lyY2xlIHI9IjMyIiBjeD0iMzIiIGN5PSIzMiIgZmlsbD0iIzAwMDAwMCIgc2hhcGU9ImNpcmNsZSI+PC9jaXJjbGU+PGcgdHJhbnNmb3JtPSJtYXRyaXgoMC41LDAsMCwwLjUsMTUuOTk5OTk5MDQ2MzI1Njc2LDE2LjAwMDAwMDAwMDAwMDAwNCkiPjxsaW5lYXJHcmFkaWVudCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJTVkdJRF8xXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIzMiIgeDI9IjMyIiB5MT0iNjMiIHkyPSIxIj48c3RvcCBzdG9wLW9wYWNpdHk9IjEiIHN0b3AtY29sb3I9IiM5ZjJmZmYiIG9mZnNldD0iMCI+PC9zdG9wPjxzdG9wIHN0b3Atb3BhY2l0eT0iMSIgc3RvcC1jb2xvcj0iI2ZiZmJmYiIgb2Zmc2V0PSIwIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im02MS41NTMgNTMuNjU4LTkuMzE3LTQuNjU4aC0xLjIzNnYtNDhoLTMzLjQxNGwtMTAuNTg2IDEwLjU4NnYzNy40OTRjLTMuMzg2LjQ4OC02IDMuNDAxLTYgNi45MiAwIDMuODU5IDMuMTQxIDcgNyA3aDQ0LjIzNmw5LjMxNy00LjY1OGMuODkyLS40NDcgMS40NDctMS4zNDUgMS40NDctMi4zNDJzLS41NTUtMS44OTUtMS40NDctMi4zNDJ6bS0xMC41NTMtMi42NTh2MmgtMzh2LTJ6bTAgNmgtMzh2LTJoMzh6bS0zOCAyaDM4djJoLTM4em0zNi0xMGgtNDB2LTM2aDEwdi0xMGgzMHptLTM4LjU4Ni0zOCA2LjU4Ni02LjU4NnY2LjU4NnptLTcuNDE0IDQ1YzAtMi43NTcgMi4yNDMtNSA1LTVoM3YxMGgtM2MtMi43NTcgMC01LTIuMjQzLTUtNXptNTcuNjU4LjU1My03LjY1OCAzLjgyOXYtOC43NjRsNy42NTcgMy44MjljLjIxMi4xMDYuMzQzLjMxOC4zNDMuNTUzcy0uMTMxLjQ0Ny0uMzQyLjU1M3ptLTQ3LjY1OC0xMS41NTNoMzJ2LTI4aC0zMnptMi0yNmgyOHYyNGgtMjh6bTEwIDEzLjU4Ni0zLTMtNC40MTQgNC40MTQgNy40MTQgNy40MTQgMTUuNDE0LTE1LjQxNC00LjQxNC00LjQxNHptMCA2LTQuNTg2LTQuNTg2IDEuNTg2LTEuNTg2IDMgMyAxMS0xMSAxLjU4NiAxLjU4NnptLTItMzEuNTg2aC0ydi0yaDJ6bTI0IDBoLTIydi0yaDIyem0wIDRoLTI2di0yaDI2em0tMjYgNHYtMmgyNnYyeiIgZmlsbD0idXJsKCNTVkdJRF8xXykiIGRhdGEtb3JpZ2luYWw9InVybCgjU1ZHSURfMV8pIiBzdHlsZT0iIj48L3BhdGg+PC9nPjwvc3ZnPg==" />
          </div>
           <h5 class="font-weight-bold">Мотивационное письмо </h4>
         </div>
         <div class="col-lg-4 col-12 pb-3">
           <div class="py-2">
-            <img src="image/folder.png" class="img-fluid" alt="">
+            <img class="w-50 h-50" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDY0IDY0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Y2lyY2xlIHI9IjMyIiBjeD0iMzIiIGN5PSIzMiIgZmlsbD0iIzAwMDAwMCIgc2hhcGU9ImNpcmNsZSI+PC9jaXJjbGU+PGcgdHJhbnNmb3JtPSJtYXRyaXgoMC41LDAsMCwwLjUsMTYsMTUuOTk5OTk5MDQ2MzI1NjkpIj48bGluZWFyR3JhZGllbnQgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBpZD0iU1ZHSURfMV8iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMzIiIHgyPSIzMiIgeTE9IjU1IiB5Mj0iOSI+PHN0b3Agc3RvcC1vcGFjaXR5PSIxIiBzdG9wLWNvbG9yPSIjOWYyZmZmIiBvZmZzZXQ9IjAiPjwvc3RvcD48c3RvcCBzdG9wLW9wYWNpdHk9IjEiIHN0b3AtY29sb3I9IiNmYmZiZmIiIG9mZnNldD0iMCI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMjkgMTNoLTI0djMwaDI0em0tMTcuNjI1IDEzLjM0MWMtLjI0NC0uNjI3LS4zNzUtMS4yOTgtLjM3NS0xLjk3MSAwLTIuOTk3IDIuNDM4LTUuNDM2IDUuNDM2LTUuNDM2aDEuMTI5YzIuOTk3IDAgNS40MzYgMi40MzggNS40MzYgNS40MzYgMCAuNjU2LS4xMjIgMS4zMS0uMzU0IDEuOTI0LS40MjUtLjgwNS0xLjE5OS0xLjQtMi4xNTItMS41NThsLTEuOTU0LS4zMjZjLTEuMDk5LS4xODMtMi4wMDEtLjk1My0yLjM1NC0yLjAxMWwtLjIzOC0uNzE1LTEuODk2LjYzMy4yMzguNzE1Yy4wOTcuMjkxLjIxOS41NjguMzYyLjgzMWwtMS4xMzguNDU1Yy0uOTcxLjM4Ny0xLjcyMSAxLjEyLTIuMTQgMi4wMjN6bTEuNjI1IDEuNjljMC0uODIyLjQ5My0xLjU1MiAxLjI1Ny0xLjg1NmwxLjc4Ni0uNzE1Yy42MjcuNDY3IDEuMzY2Ljc4OCAyLjE2OC45MjJsMS45NTQuMzI2Yy40ODMuMDguODM1LjQ5NS44MzUuOTg2djEuMzA0YzAgMi4yMDYtMS43OTQgNC4wMDEtNCA0LjAwMi0yLjIwNi0uMDAxLTQtMS43OTYtNC00LjAwMnptMy45OTggNi45NjloLjAwNGMuNTQxIDAgMS4wNjMtLjA3OSAxLjU2MS0uMjE0bC4zNjIgMS4wODdjLS4zOTguNjkzLTEuMTE4IDEuMTI3LTEuOTI1IDEuMTI3cy0xLjUyNy0uNDM0LTEuOTI1LTEuMTI3bC4zNjItMS4wODdjLjQ5OS4xMzUgMS4wMi4yMTQgMS41NjEuMjE0em0tMy41NjUgMi4wMzRjLjc3MiAxLjIxOSAyLjA5OSAxLjk2NiAzLjU2NyAxLjk2NnMyLjc5NS0uNzQ3IDMuNTY3LTEuOTY2bDIuNTA2LjM4N2MxLjkzNS4yOTkgMy40MDcgMS43NCAzLjgwOCAzLjU3OWgtMTkuNzYzYy40MDEtMS44MzkgMS44NzMtMy4yOCAzLjgwNy0zLjU3OXptMTMuNTY3LTIyLjAzNHYyMi4yNzRjLS45Ni0uOTM5LTIuMTk2LTEuNjA5LTMuNjIxLTEuODI5bC0yLjYyMy0uNDA1LS4zNjUtMS4wOTVjMS4yMTMtLjgzNSAyLjEwMS0yLjEwNCAyLjQ0Ny0zLjU4MWwxLjMzNC0yLjU4MWMuNTQxLTEuMDUuODI4LTIuMjMuODI4LTMuNDEzIDAtNC4xLTMuMzM2LTcuNDM2LTcuNDM2LTcuNDM2aC0xLjEyOWMtNC4xIDAtNy40MzYgMy4zMzYtNy40MzYgNy40MzYgMCAxLjE4My4yODcgMi4zNjMuODI5IDMuNDEzbDEuMzM0IDIuNTgxYy4zNDYgMS40NzcgMS4yMzQgMi43NDYgMi40NDcgMy41ODFsLS4zNjUgMS4wOTUtMi42MjQuNDA1Yy0xLjQyNC4yMi0yLjY2Ljg5LTMuNjIgMS44Mjl2LTIyLjI3NHptMzItMmgtMjZ2OGgyNnptLTEyIDJoNHY0aC00em0tMiA0aC00di00aDR6bS0xMC00aDR2NGgtNHptMjIgNGgtNHYtNGg0em0tMTAgNmgtMTR2LTJoMTR6bTIgMHYtMmg2djJ6bTQgNGgtMjB2LTJoMjB6bS0xMCA0aC0xMHYtMmgxMHptMiAwdi0yaDZ2MnptLTQwIDE4aDZ2LTZoLTZ6bTItNGgydjJoLTJ6bTYgNGg2di02aC02em0yLTRoMnYyaC0yem02IDRoNnYtNmgtNnptMi00aDJ2MmgtMnptNiA0aDZ2LTZoLTZ6bTItNGgydjJoLTJ6bTI3LjE5NS02LjM0NCAxLjc3NCA3LjEwMi0xLjkzOS40ODQtMS43NzUtNy4xMDJjLS4wNDUtLjE3NS0uMzQ3LS4xNTQtLjM2Ni4wMjdsLS43OTMgNy45MjRjLS4xMDggMS4wODgtMS4wMTQgMS45MDktMi4xMDkgMS45MDktMS4wNjcgMC0xLjk3MS0uNzk4LTIuMTAyLTEuODU2bC0uNzQ2LTUuOTY3Yy0uMDIzLS4xOTItLjM0OS0uMjExLS4zOTYtLjAyM2wtLjc0MyAyLjk2N3Y0Ljg3OWgtMnYtNWMwLS41NTItLjQ0OC0xLTEtMXMtMSAuNDQ4LTEgMXYzaC0ydi03YzAtMS4xMDMtLjg5Ny0yLTItMnMtMiAuODk3LTIgMnY5aC0ydi05YzAtMi4yMDYgMS43OTQtNCA0LTRzNCAxLjc5NCA0IDR2MS4xODRjLjMxNC0uMTEyLjY0OC0uMTg0IDEtLjE4NC41OSAwIDEuMTM3LjE3NyAxLjYwMi40NzNsLjIwMS0uODA0Yy4yNDUtLjk4MiAxLjEyMy0xLjY2OSAyLjEzNS0xLjY2OSAxLjEwOCAwIDIuMDQ4LjgyOSAyLjE4NiAxLjkyOWwuNzQ2IDUuOTY4Yy4wMTYuMTIxLjIyNC4xMTYuMjM1LS4wMDNsLjc5My03LjkyNWMuMTEzLTEuMTIyIDEuMDQ3LTEuOTY5IDIuMTc1LTEuOTY5IDEuMDA2IDAgMS44NzguNjgxIDIuMTIyIDEuNjU2em0yLjgwNS0zMS42NTZoLTU4Yy0xLjEwMyAwLTIgLjg5Ny0yIDJ2NDJjMCAxLjEwMy44OTcgMiAyIDJoNThjMS4xMDMgMCAyLS44OTcgMi0ydi00MmMwLTEuMTAzLS44OTctMi0yLTJ6bS01OCA0NHYtNDJoNThsLjAwMiA0MnoiIGZpbGw9InVybCgjU1ZHSURfMV8pIiBkYXRhLW9yaWdpbmFsPSJ1cmwoI1NWR0lEXzFfKSIgc3R5bGU9IiI+PC9wYXRoPjwvZz48L3N2Zz4=" />
           </div>
           <h5 class="font-weight-bold">Помощь в сборе документов</h4>
         </div>
         <div class="col-lg-4 col-12 pb-3">
           <div class="py-2">
-            <img src="image/credit-card.png" class="img-fluid" alt="">
+            <img class="w-50 h-50" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDY0IDY0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Y2lyY2xlIHI9IjMyIiBjeD0iMzIiIGN5PSIzMiIgZmlsbD0iIzAwMDAwMCIgc2hhcGU9ImNpcmNsZSI+PC9jaXJjbGU+PGcgdHJhbnNmb3JtPSJtYXRyaXgoMC41LDAsMCwwLjUsMTYuMDAwMDAwOTUzNjc0MzEsMTYuMDAwMDAwMDAwMDAwMDA0KSI+PGxpbmVhckdyYWRpZW50IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaWQ9IlNWR0lEXzFfIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjMyIiB4Mj0iMzIiIHkxPSI2MyIgeTI9IjEiPjxzdG9wIHN0b3Atb3BhY2l0eT0iMSIgc3RvcC1jb2xvcj0iIzlmMmZmZiIgb2Zmc2V0PSIwIj48L3N0b3A+PHN0b3Agc3RvcC1vcGFjaXR5PSIxIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBvZmZzZXQ9IjAiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTUgMjloMnYyaC0yem00IDJoOXYtMmgtOXptNTQtMy4zNjh2MTEuODY4YzAgMS45My0xLjU3IDMuNS0zLjUgMy41LS41MzkgMC0xLjA0NC0uMTMzLTEuNS0uMzUxdjEyLjM1MWgtMi44NjdjMS4xNTMuOTMgMS44NjcgMi4zMzggMS44NjcgMy44ODN2NC4xMTdoLTE4LTItMTYtMi0xOHYtNC41MjhjMC0xLjkwNiAxLjA1OS0zLjYyIDIuNzY0LTQuNDcybDEuMjM2LS42MTh2LTYuMzgyYzAtMy4zMDkgMi42OTEtNiA2LTZzNiAyLjY5MSA2IDZ2Ni4zODJsMS4yMzYuNjE4Yy43OTkuNCAxLjQ1Ljk5NCAxLjkyMiAxLjcwMy41ODMtLjcwNCAxLjM0OS0xLjI2IDIuMjYtMS41NjNsMi4xNzEtLjcyNC0uMTQzLS4yODZjLS45NDUtMS44OTItMS40NDYtNC4wMTItMS40NDYtNi4xMyAwLTMuMzA5IDIuNjkxLTYgNi02czYgMi42OTEgNiA2YzAgMi4xMTgtLjUwMSA0LjIzOC0xLjQ0NyA2LjEzbC0uMTQzLjI4NiAyLjE3MS43MjRjLjk5My4zMzEgMS44MjMuOTU0IDIuNDE5IDEuNzUxLjU5Ni0uNzk3IDEuNDI2LTEuNDIgMi40MTktMS43NTFsMi4xNzEtLjcyNC0uMTQzLS4yODZjLS45NDYtMS44OTItMS40NDctNC4wMTItMS40NDctNi4xMyAwLTIuMjE1IDEuMjEtNC4xNDkgMy01LjE4OHYtNi44MTJoLTQzdi0zNGg0OXYuMDA5YzIuNzg2LjA0OCA1LjQwNiAxLjEwNiA3LjQzIDMuMDE0IDIuMDA0LjIxNSAzLjU3IDEuOTE2IDMuNTcgMy45Nzd2LjIzMWMwIDEuMDExLS4yMzcgMS45OTQtLjY3OSAyLjg5Mi40MTguNTE2LjY3OSAxLjE2My42NzkgMS44NzcgMCAxLjY1NC0xLjM0NiAzLTMgM2gtMS4wOTFjLS4yMzIgMS4zNjItLjkyMiAyLjU2Ni0xLjkwOSAzLjQ1MnYxLjcyOGwzLjI0Mi42NDhjLjc2Mi4xNTIgMS40NzYuNDQ4IDIuMTIyLjg3OSAxLjY1MSAxLjEwMiAyLjYzNiAyLjk0MiAyLjYzNiA0LjkyNXptLTguMzMtNC40NzgtLjA4OC4yNjVjLS41MTYgMS41NDQtMS45NTUgMi41ODEtMy41ODIgMi41ODFzLTMuMDY2LTEuMDM3LTMuNTgxLTIuNTgxbC0uMDg5LS4yNjUtMy44MzMuNzY3Yy0uMTYuMDMyLS4zMTYuMDc0LS40NzEuMTI1bC0zLjI1OSAxLjA4Ni01LjAyMS00LjQ2My0yLjYwOSAyLjYxIDMuMjgxIDIuOTUzYzEuNjg2IDEuNTE3IDQuMDg3IDIuMTEyIDYuMjgxIDEuNTYzbDIuMDEyLS41MDNjLS4xMTItLjIxMS0uMjQ1LS40MTEtLjQxOC0uNTg0bDEuNDE0LTEuNDE1Yy44MzQuODMzIDEuMjkzIDEuOTQxIDEuMjkzIDMuMTIxdjguNTg2aDEwdi0zLTUuNTg2YzAtMS4xOC40NTktMi4yODggMS4yOTMtMy4xMjJsMS40MTQgMS40MTVjLS40NTYuNDU2LS43MDcgMS4wNjItLjcwNyAxLjcwN3Y1LjU4NiAxaDN2LTcuMzY4YzAtMS4zMTMtLjY1Mi0yLjUzMi0xLjc0NS0zLjI2MS0uNDI4LS4yODUtLjkwMS0uNDgxLTEuNDA1LS41ODJ6bS0yNC4wMjItMS4yMTYgMi42MDEtMi42MDEtMi4xMjctMS44OWMtLjMyNC0uMjg5LS43NC0uNDQ3LTEuMTc0LS40NDdoLS4xODFjLS45NzQgMC0xLjc2Ny43OTMtMS43NjcgMS43NjggMCAuNS4yMTMuOTc5LjU4NSAxLjMxNHptMjIuMzUyLTEuMjk1Yy0uNjI3LjIyMy0xLjI5OC4zNS0yIC4zNXMtMS4zNzMtLjEyOC0yLS4zNXYxLjE5NGwuMzE2Ljk1Yy4yNDIuNzI1LjkxOCAxLjIxMyAxLjY4NCAxLjIxM3MxLjQ0Mi0uNDg4IDEuNjg1LTEuMjE0bC4zMTUtLjk0OXptMi04LjY5M2MtMS40NjYtLjE1My0yLjg0NC0uNzEyLTQtMS42MjItMS4xNTYuOTEtMi41MzQgMS40NjgtNCAxLjYyMnYzLjA0M2MwIDIuMjA2IDEuNzk0IDQgNCA0czQtMS43OTQgNC00em00IDEuMDVjMC0uNTUxLS40NDgtMS0xLTFoLTF2MmgxYy41NTIgMCAxLS40NDkgMS0xem0tMi43MDItNy4yODhjLTEuNzYzLTEuNzYzLTQuMDU1LTIuNzEyLTYuNDkzLTIuNzEyLTEuNjUzIDAtMy4yNzYuNDUtNC42OTUgMS4zMDEtMS4zMDEuNzgxLTIuMTEgMi4yMDgtMi4xMSAzLjcyNXYuMjA1YzAgLjYzNi4xMzggMS4yNTYuMzkxIDEuODMyLjE5Ny0uMDQxLjQtLjA2My42MDktLjA2M2gxdi0uMDA3aDEuMTcyYzEuNTU3IDAgMy4wMjEtLjYwNiA0LjEyMS0xLjcwN2wuNzA3LS43MDguNzA3LjcwOGMxLjEwMSAxLjEwMSAyLjU2NCAxLjcwNyA0LjEyMSAxLjcwN2gxLjE3MnYuMDA3aDFjLjIwOSAwIC40MTIuMDIyLjYwOS4wNjMuMjUzLS41NzYuMzkxLTEuMTk2LjM5MS0xLjgzMnYtLjIzMWMwLTEuMTAzLS44OTctMi0yLTJoLS40MXptLTExLjI5OCA4LjI4OHYtMmgtMWMtLjU1MiAwLTEgLjQ0OS0xIDFzLjQ0OCAxIDEgMXptLTEgMTl2LTMuNzE5bC0xLjgxNS40NTRjLS43MDUuMTc2LTEuNDMuMjY1LTIuMTU3LjI2NS0yLjIgMC00LjMxMy0uODExLTUuOTQ4LTIuMjgzbC02LjgzMy02LjE0OWMtLjc5My0uNzE0LTEuMjQ3LTEuNzM0LTEuMjQ3LTIuOCAwLTIuMDc4IDEuNjktMy43NjggMy43NjgtMy43NjhoLjE4MWMuOTI1IDAgMS44MTMuMzM4IDIuNTAzLjk1M2w3Ljc4MSA2LjkxNiAyLjE2MS0uNzIxYy4yMzItLjA3OC40NzEtLjE0MS43MTEtLjE4OGwzLjg5NS0uNzh2LTEuNzI4Yy0uOTg3LS44ODYtMS42NzctMi4wOS0xLjkwOS0zLjQ1MmgtMS4wOTFjLTEuNjU0IDAtMy0xLjM0Ni0zLTMgMC0uNzE0LjI2MS0xLjM2Mi42NzktMS44NzctLjQ0Mi0uODk4LS42NzktMS44ODEtLjY3OS0yLjg5MnYtLjIwNWMwLTEuOTcyLjkzOS0zLjgzNSAyLjQ4My01LjAyNmgtNDAuNDgzdjMwem0tMSAxNGMwIDEuODA5LjQyOCAzLjYxOSAxLjIzNiA1LjIzNmwuMzgyLjc2NGg0Ljc2NGwuMzgyLS43NjRjLjgwOC0xLjYxNyAxLjIzNi0zLjQyNyAxLjIzNi01LjIzNiAwLTIuMjA2LTEuNzk0LTQtNC00cy00IDEuNzk0LTQgNHptLTE4IDBjMCAxLjgwOS40MjggMy42MTkgMS4yMzYgNS4yMzZsLjM4Mi43NjRoNC43NjRsLjM4Mi0uNzY0Yy44MDgtMS42MTcgMS4yMzYtMy40MjcgMS4yMzYtNS4yMzYgMC0yLjIwNi0xLjc5NC00LTQtNHMtNCAxLjc5NC00IDR6bS0xOCAxMGg4di0xMGMwLTIuMjA2LTEuNzk0LTQtNC00cy00IDEuNzk0LTQgNHptMTIgMS44ODN2LS40MTFjMC0xLjE0NC0uNjM2LTIuMTcyLTEuNjU4LTIuNjgzbC0uMzQyLS4xNzF2My4zODJoLTEydi0zLjM4MmwtLjM0Mi4xNzFjLTEuMDIyLjUxMS0xLjY1OCAxLjU0LTEuNjU4IDIuNjgzdjIuNTI4aDE2em0xOCAwYzAtMS4yOTMtLjgyNC0yLjQzNy0yLjA1Mi0yLjg0NmwtMy4xMTEtMS4wMzdoLTUuNjc1bC0zLjExMSAxLjAzN2MtMS4yMjcuNDA5LTIuMDUxIDEuNTUzLTIuMDUxIDIuODQ2djIuMTE3aDE2em0xOCAwYzAtMS4yOTMtLjgyNC0yLjQzNy0yLjA1Mi0yLjg0NmwtMy4xMTEtMS4wMzdoLTUuNjc1bC0zLjExMSAxLjAzN2MtMS4yMjcuNDA5LTIuMDUxIDEuNTUzLTIuMDUxIDIuODQ2djIuMTE3aDE2em0xLTE5LjM4M3YtLjVoLTEwdjIuMDljLjMyNi0uMDU1LjY1OS0uMDkgMS0uMDkgMy4zMDkgMCA2IDIuNjkxIDYgNiAwIDIuMDctLjQ4NiA0LjE0LTEuMzkxIDZoNC4zOTF6bTUgMHYtMi41aC0zdjIuNWMwIC44MjcuNjczIDEuNSAxLjUgMS41czEuNS0uNjczIDEuNS0xLjV6bS00MC0yOC41aC0ydjRoLTJ2LThoLTJ2OGgtMnYtNmgtMnY2aC0ydi00aC0ydjRoLTJ2MmgxOHYtMmgtMnptLTE2IDEwaDJ2LTJoLTJ6bTQgMGgxMHYtMmgtMTB6bTEyIDBoMnYtMmgtMnoiIGZpbGw9InVybCgjU1ZHSURfMV8pIiBkYXRhLW9yaWdpbmFsPSJ1cmwoI1NWR0lEXzFfKSIgc3R5bGU9IiI+PC9wYXRoPjwvZz48L3N2Zz4=" />
           </div>
           <h5 class="font-weight-bold">Визовое сопровождение </h4>
         </div>
         <div class="col-lg-4 col-12 pb-3">
           <div class="py-2">
-            <img src="image/conversation (1).png" class="img-fluid" alt="">
+            <img class="w-50 h-50" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDY0IDY0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Y2lyY2xlIHI9IjMyIiBjeD0iMzIiIGN5PSIzMiIgZmlsbD0iIzAwMDAwMCIgc2hhcGU9ImNpcmNsZSI+PC9jaXJjbGU+PGcgdHJhbnNmb3JtPSJtYXRyaXgoMC43LDAsMCwwLjcsOS41OTk5OTc3MTExODE2NDMsOS41OTk5OTk0Mjc3OTU0MSkiPjxsaW5lYXJHcmFkaWVudCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJTVkdJRF8xXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIzMiIgeDI9IjMyIiB5MT0iNjMiIHkyPSIxIj48c3RvcCBzdG9wLW9wYWNpdHk9IjEiIHN0b3AtY29sb3I9IiM5ZjJmZmYiIG9mZnNldD0iMCI+PC9zdG9wPjxzdG9wIHN0b3Atb3BhY2l0eT0iMSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgb2Zmc2V0PSIwIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im01MSA1NmMwIC41NTItLjQ0OCAxLTEgMXMtMS0uNDQ4LTEtMSAuNDQ4LTEgMS0xIDEgLjQ0OCAxIDF6bS0xLTVjLS41NTIgMC0xIC40NDgtMSAxcy40NDggMSAxIDEgMS0uNDQ4IDEtMS0uNDQ4LTEtMS0xem0tNDktNXYtOC42OTljMC0zLjY0MiAxLjc2OS03LjA4IDQuNzMzLTkuMTk2IDEuODQ1LTEuMzE4IDQuMDA3LTIuMDM0IDYuMjY3LTIuMDkzdi00LjU5OGwtLjI5My0uMjkzYy0uOTgtLjk4LTEuNTY1LTIuMjQ5LTEuNjgyLTMuNjE0LS45MjEtLjc3Mi0zLjAyNS0yLjkyNi0zLjAyNS02LjUwNyAwLTIuNzY0IDEuMDE1LTUuNDI5IDIuNzE1LTcuMTI5IDEuODc0LTEuODc0IDQuMjc0LTIuODcxIDYuODIxLTIuODcxaDguMDVjMS4xNzkgMCAyLjI4OC40NTkgMy4xMjEgMS4yOTMuODM0LjgzMyAxLjI5MyAxLjk0MiAxLjI5MyAzLjEyMSAwIDIuMTItLjg5MSA0LjE1NS0yLjQxNyA1LjU5OS4yNjYuNjEuNDE3IDEuMjguNDE3IDEuOTg3djQuMDdjMCAxLjQwOS0uMjY1IDIuNzg3LS43ODkgNC4wOTQtLjg3NSAyLjE4Ny0yLjg5MiAzLjYzMS01LjIxMSAzLjgwMnYxLjAzNGguMTg1YzMuMzQ4IDAgNi41NzkgMS4yMTQgOS4wOTcgMy40MTggMi45OTggMi42MjQgNC43MTggNi40MTMgNC43MTggMTAuMzk3djMuNzcxbDUuNzg2LTUuNzg2Yy43NzYtMS43MTggMS43ODUtMy4zMzYgMy4wMjktNC43ODdsMS4yMDEtMS40MDFjLjI5LS4zMzguNjg5LS41NzIgMS4xMjUtLjY2bDEuODU5LS4zNzJ2LTMuNjIyYy0uMTQzLjAxMS0uMjgzLjA0Mi0uNDI2LjA0MmgtLjI3MWMtMS4wNSAwLTIuMDY3LS4zMDgtMi45NDEtLjg5MS0xLjQ3OS0uOTg1LTIuMzYyLTIuNjM1LTIuMzYyLTQuNDEydi0uNjk3aC0ydi0xYzAtLjExNy4wMDctMi4xMTYuMzU4LTUuMDMzbC0xLjcwMS0xLjM2MWMtMS42ODktMS4zNTEtMi42NTctMy4zNjYtMi42NTctNS41MjcgMC0zLjkwNCAzLjE3NS03LjA3OSA3LjA3OS03LjA3OWg0LjYwOGMyLjQwNCAwIDQuNjY0LjkzNiA2LjM2NCAyLjYzNmwyLjM3NyAyLjM3NmMzLjY2MS4yMjIgNi41NzIgMy4yNzIgNi41NzIgNi45ODh2NS4yOTJjMCAyLjY2OC0xLjQ4MiA1LjA2Ny0zLjg2OSA2LjI2MWwtMi4xMzEgMS4wNjV2My43NjRsMS4xMDUuNTUzYzEuNzAyLjg1MiAzLjEwOCAyLjI1OCAzLjk2IDMuOTYuNjEyIDEuMjIyLjkzNSAyLjU5MS45MzUgMy45NTl2MjUuMTQ2aC0yNHYtOS41ODZsLS45NS45NWMtMS43IDEuNy0zLjk2IDIuNjM2LTYuMzY0IDIuNjM2aC0yLjY4NnY2aC0yNHYtOC41MjFjLTIuNDQxLTIuMDE5LTQtNS4wNy00LTguNDc5em0yNiAxMWgtLjg3M2MtLjAwNSAwLS4wMS4wMDEtLjAxNS4wMDFoLS4wMDFsLTE0LjExMS0uMDAxYy0xLjgwMSAwLTMuNDk4LS40NDQtNS0xLjIxNHY1LjIxNGgyMHptLTQtOHY2LjAwMmgydi0uMDAyaDEuMTI3Yy43NjMtLjAwNCAxLjQ4Mi0uMzA0IDIuMDI2LS44NDkuNTQ4LS41NDkuODQ5LTEuMjc0Ljg0Ny0yLjA0My0uMDAzLTEuNzU0LTEuMzQ2LTMuMTA1LTIuOTk0LTMuMTA4aC0xLjAwNnptMTggMTJoNHYtMTMuNDhsLjM3NS0uM2MuMTQxLS4xMTMuMjctLjIzNi40MDctLjM1MmwtMy43NjMtNi43NzNjLS42NjIgMS44OTQtMS4wMTkgMy44OTctMS4wMTkgNS45MzN6bTEwLjc5OC0yMy40MzIgMS43My02LjA1NC0xLjg1Mi4zNy0xLjYyMyAzLjI0NSAxLjAwNCA0LjUxOWMuMjgxLS42NzYuNTM3LTEuMzY2Ljc0MS0yLjA4em0tMi42MDctNS4xODctMi4xOTMuNDM4LS4wMDIgMS4xODFoMS4zODZ6bS0zLjE2IDEwLjgxNiAxLjI1NCAyLjI1N2MuODg1LS45MjkgMS42NjYtMS45NDIgMi4zNDItMy4wMjRsLTEuNDI5LTYuNDNoLTEuMzF6bTkuODI5LTEyLjE0OS0uMTI2LjAyNS0yLjAxMyA3LjA0NWMtMS4xNjQgNC4wNzMtMy40ODMgNy42NDMtNi43MjEgMTAuMzU1djEyLjUyN2g2di0xNmgydjE2aDZ2LTIzLjE0NmMwLTEuMDU5LS4yNS0yLjExOS0uNzI0LTMuMDY1LS42NTktMS4zMTgtMS43NDgtMi40MDYtMy4wNjUtMy4wNjV6bS0xNS4xNzgtMTguMzgzYy4wOTgtLjYuMjA5LTEuMjIyLjMzNy0xLjg2MmwuMDk2LS40NzkuNDM4LS4yMTljLjA5LS4wNDQgMi4yMzctMS4xMDUgNC40NDctMS4xMDUgMi42NTUgMCA0LjUzMyAxLjE2NCA1LjY0IDIuMTM5LjYxOC41NDUgMS4wMjcgMS4xNjggMS4yMjQgMS44NjFoLjEzNmMyLjIwNiAwIDQgMS43OTQgNCA0IDAgMS44MjgtMS4yMjEgMi45OS0xLjk3NSAzLjUzNC4wMzQuMzczLjEwMS43Ny4xOTggMS4xNy4xOC43MzcuNTMgMS40MzcgMS4wMTcgMi4wNTdsMS45OTYtLjk5OGMxLjcwNS0uODUyIDIuNzY0LTIuNTY1IDIuNzY0LTQuNDcxdi01LjI5MmMwLTIuNzU3LTIuMjQzLTUtNS01aC0uNDE0bC0yLjk1LTIuOTVjLTEuMzIyLTEuMzIyLTMuMDgtMi4wNS00Ljk0OS0yLjA1aC00LjYwOGMtMi44MDEgMC01LjA3OSAyLjI3OC01LjA3OSA1LjA3OSAwIDEuNTUxLjY5NSAyLjk5NyAxLjkwNiAzLjk2NnptOS4zMTggMTcuNTE1IDUtMXYtMy43ODJjLS44NC0uOTM1LTEuNDMyLTIuMDQxLTEuNzItMy4yMi0uMTg2LS43NjItLjI4LTEuNDk1LS4yOC0yLjE3OHYtLjYxOGwuNTUzLS4yNzZjLjAwOS0uMDA1IDEuNDQ3LS43NjQgMS40NDctMi4xMDYgMC0xLjEwMy0uODk3LTItMi0yaC0ydi0xYzAtLjUyNS0uMjEtLjk0NC0uNjgyLTEuMzYtLjg0OS0uNzQ4LTIuMjg3LTEuNjQtNC4zMTgtMS42NC0xLjIxOSAwLTIuNDc2LjQ0LTMuMTE4LjcwMy0uNiAzLjE3Mi0uNzkyIDUuODk5LS44NTMgNy4yOTdoMS45NzF2Mi42OTdjMCAxLjEwNy41NSAyLjEzNCAxLjQ3MSAyLjc0OC41NDQuMzYzIDEuMTc4LjU1NSAxLjgzMi41NTVoLjI3MWMuMjE4IDAgLjQzNi0uMDIxLjY0OC0uMDY0bDQuNTgyLS45MTcuMzkzIDEuOTYxLTMuMTk3LjY0em0tNi45NzkgNy41OTkgMS4zNTEgMi40MzIuNjI4LTUuMjcxdi0uMmMtLjc2NS45NS0xLjQyNiAxLjk2Ny0xLjk3OSAzLjAzOXptLTMuNTkxIDQuMjA1LTUuNTUxIDUuNTUxYy0uOTMxLjkzMS0yLjIyIDEuNDY1LTMuNTM3IDEuNDY1aC0uMzc0Yy42MzcuODQxIDEuMDMgMS44NzYgMS4wMzIgMy4wMTFzLS4zNDggMi4xNDgtLjk3IDIuOTg5aDEuNjU2YzEuODcgMCAzLjYyNy0uNzI4IDQuOTUtMi4wNWwyLjM2NC0yLjM2NHYtNC41NThjMC0xLjM2OC4xNTYtMi43Mi40My00LjA0NHptLTEwLjQ2NS0xMS4wNjFjLTEuMDczLS45MzktMi4yOTctMS42NjctMy42MDktMi4xNjJsLTYuMzU2IDE1LjQzN3YyLjgwMmg3IC4wMDEuMDA1Ljk5NHYtNmgydjZoMS4zNDJjLjc5MSAwIDEuNTY0LS4zMiAyLjEyNC0uODc5bC41MzQtLjUzNXYtNS43NzFjMC0zLjQwNy0xLjQ3MS02LjY0OC00LjAzNS04Ljg5MnptLTEzLjM0Ny0yLjkyMyAxIDJoMS43NjRsMS0yem03Ljc5OS4yMTdjLS41OTQtLjExNC0xLjE5OC0uMTc2LTEuODA4LS4xOThsLTEuNTY5IDMuMTM3LjYyNCAzLjc0NnptLTExLjExNi0uMjE3Yy0uMjM2IDAtLjQ2Ny4wMzYtLjcuMDU0bDIuODYyIDYuMDgyLjQ5Ny0yLjk4LTEuNTc4LTMuMTU2em0zLjY2IDkuMzE4IDEuOTc4IDQuMjA0IDEuMjgyLTMuMTE0LTEuMDY4LTYuNDA4aC0xLjMwNXptOS4wMzktMjQuMzE4YzAtMS42NTQtMS4zNDYtMy0zLTNoLTVjLTEuNjU0IDAtMyAxLjM0Ni0zIDN2M2gtMWMtLjU1MSAwLTEgLjQ0OS0xIDEgMCAxLjAyMi4zOTggMS45ODQgMS4xMjEgMi43MDdsLjg3OS44Nzl2NS40MTRoNXYtMS4yMTFjLS42NS0uMTctMS4yNzMtLjQzNi0xLjg0LS44MTRsLTEuNzE0LTEuMTQzIDEuMTA5LTEuNjY0IDEuNzE0IDEuMTQzYy42NzYuNDUxIDEuNDYzLjY4OSAyLjI3Ni42ODkgMS42ODggMCAzLjE4My0xLjAxMyAzLjgxLTIuNTguNDI4LTEuMDY5LjY0NS0yLjE5Ny42NDUtMy4zNXptLTEzIDEuMTcxdi0xLjE3MWMwLTIuNzU3IDIuMjQzLTUgNS01aDVjMS4zMTcgMCAyLjUwOC41MjIgMy40MDIgMS4zNTggMS4wMDktMS4wNTMgMS41OTgtMi40NjggMS41OTgtMy45NDQgMC0uNjM1LS4yNTgtMS4yNTgtLjcwNy0xLjcwN3MtMS4wNzItLjcwNy0xLjcwNy0uNzA3aC04LjA1Yy0yLjAxMyAwLTMuOTEuNzg5LTUuMzQxIDIuMjItMS4zOTkgMS4zOTgtMi4xOTUgMy41MzUtMi4xOTUgNS43OCAwIDEuOTg5Ljg1MiAzLjQwMSAxLjU3MiA0LjI0Mi4zNTQtLjQ4OC44NS0uODY2IDEuNDI4LTEuMDcxem0tOSAzMS44MjljMCA0Ljk2MyA0LjAzOCA5IDkgOWw5IC4wMDF2LTYuMDAxaC0xMC4wMDZjLTEuMDk5IDAtMS45OTQtLjg5Ny0xLjk5NC0ydi02aDJ2Nmg2di0yLjc3NmwtNy40MzgtMTUuODA2Yy0uOTQ1LjI5MS0xLjg0NS43MjgtMi42NjcgMS4zMTUtMi40MzkgMS43NDItMy44OTUgNC41NzEtMy44OTUgNy41Njh6IiBmaWxsPSJ1cmwoI1NWR0lEXzFfKSIgZGF0YS1vcmlnaW5hbD0idXJsKCNTVkdJRF8xXykiIHN0eWxlPSIiPjwvcGF0aD48L2c+PC9zdmc+" />
           </div>
           <h5 class="font-weight-bold">Встреча + сопровождение в аэропорту</h4>
         </div>
@@ -217,52 +249,9 @@
     </div>
   </section>
 
-  <section class="pt-lg-5 mt-lg-5">
-    <div class="container mt-5">
-      <div class="row justify-content-center text-lg-left text-center">
-        <div class="col-lg-5 col-12">
-          <h1 class="pb-3">О нас</h2>
-          <p class=" font-size-18">Образовательно-консультационный Центр «Panda Study» — 
-            специализированная компания в области образования за рубежом. Наша цель — помочь вам разобраться в 
-            этом интересном и многообразном мире образовательных программ и сделать правильный выбор.
-          </p>
-          <a href="about_us.html" class="btn btn-primary px-4 py-2 my-3">Подробнее</a>
-        </div>
-        <div class="col-lg-6 col-12">
-          <img src="image/carousel3.jpg" class="img-fluid" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
+ 
 
-  <div class="counter-up pt-5 mt-5">
-    <div class="content">
-      <div class="box text-center d-flex justify-content-center numbers"">
-        <div class="d-flex">
-          <div class="counter pr-2" data-target="5">5 </div><span class="counter-txt">лет</span>
-        </div>
-        <div class="text mb-3">Опыта работы на рынке зарубежного образования</div>
-      </div>
-      <div class="box text-center d-flex justify-content-center numbers">
-        <div class="d-flex">
-          <div class="counter pr-2" data-target="95">95 </div><span class="counter-txt">%</span>
-        </div>
-        <div class="text mb-3">Cтудентов поступают в выбранную школу или в вуз</div>
-      </div>
-      <div class="box text-center d-flex justify-content-center numbers">
-        <div class="d-flex">
-          <div class="counter pr-2" data-target="66">66 </div><span class="counter-txt">%</span>
-        </div>
-        <div class="text mb-3">Cтудентов поступают в топ 10% учебных заведений мира</div>
-      </div>
-      <div class="box text-center d-flex justify-content-center numbers">
-        <div class="d-flex">
-          <div class="counter ct pr-2" data-target="97">97 </div><span class="counter-txt-l">%</span>
-        </div>
-        <div class="text mb-3">Учеников сдают международный экзамен на ожидаемый балл или выше</div>
-      </div>
-    </div>
-  </div>
+  
 
 <!-- carousel reviews -->
 
@@ -274,40 +263,58 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 col-12 pb-3">
-          <a href="https://www.youtube.com/watch?v=0Rn4ZoMOzIc">
-            <img src="image/photo_2021-09-22_21-43-51.jpg" class="img-fluid" alt="">
+        <div class="col-lg-4 col-12 pb-3 ">
+          <a data-fancybox href="https://www.youtube.com/watch?v=0Rn4ZoMOzIc">
+            <img src="image/reviews/reviews1.png" class="img-fluid reviews-block" alt="">
           </a>
         </div>
         <div class="col-lg-4 col-12 pb-3">
-          <a href="https://www.youtube.com/watch?v=EXlK4pR26dI">
-            <img src="image/reviews2.png" class="img-fluid" alt="">
+          <a data-fancybox href="https://www.youtube.com/watch?v=EXlK4pR26dI">
+            <img src="image/reviews/reviews2.png" class="img-fluid reviews-block" alt="">
           </a>
         </div>
         <div class="col-lg-4 col-12 pb-3">
           <a href="https://www.youtube.com/watch?v=2_zECouNnUs">
-            <img src="image/reviews3.png" class="img-fluid" alt="">
+            <img src="image/reviews/reviews3.png" class="img-fluid reviews-block" alt="">
           </a>
         </div>
         <div class="col-lg-4 col-12 pb-3">
           <a href="https://www.youtube.com/watch?v=jHbqjG9sJuw">
-            <img src="image/reviews4.png" class="img-fluid" alt="">
+            <img src="image/reviews/reviews4.png" class="img-fluid reviews-block" alt="">
           </a>
         </div>
         <div class="col-lg-4 col-12 pb-3">
           <a href="https://www.youtube.com/watch?v=OZ1Y7X6bQEU">
-            <img src="image/reviews5.png" class="img-fluid" alt="">
+            <img src="image/reviews/reviews5.png" class="img-fluid reviews-block" alt="">
           </a>
         </div>
         <div class="col-lg-4 col-12 pb-3">
           <a href="https://www.youtube.com/watch?v=7ZSDF5GVJOk">
-            <img src="image/reviews6.png" class="img-fluid" alt="">
+            <img src="image/reviews/reviews6.png" class="img-fluid reviews-block" alt="">
           </a>
         </div>
         <div class="col-lg-4 col-12 pb-3">
           <a href="https://www.youtube.com/watch?v=hLtwa1cJkTc">
-            <img src="image/reviews7.png" class="img-fluid" alt="">
+            <img src="image/reviews/reviews7.png" class="img-fluid reviews-block" alt="">
           </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pt-lg-5 mt-lg-5">
+    <div class="container mt-5">
+      <div class="row justify-content-between text-lg-left text-center">
+        <div class="col-lg-5 col-12">
+          <h1 class="pb-lg-5">О нас</h2>
+          <p class=" font-size-18 pb-lg-0">Образовательно-консультационный Центр «Panda Study» — 
+            специализированная компания в области образования за рубежом. Наша цель — помочь вам разобраться в 
+            этом интересном и многообразном мире образовательных программ и сделать правильный выбор.
+          </p>
+          <a href="about_us.html" class="btn btn-orange px-5 ">Подробнее</a>
+        </div>
+        <div class="col-lg-6 col-12">
+          <img src="image/carousel3.jpg" class="img-fluid h-100" alt="">
         </div>
       </div>
     </div>
@@ -317,7 +324,7 @@
     <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text ">
         <style>
             .map-container {
-                height: 280px;
+                height: 357px;
                 position: relative;
             }
 
@@ -343,16 +350,16 @@
             </div>
             <div class="col-lg-5 col-md-12 mb-4 mb-md-0">
                 <div class="md-form md-outline mt-0">
-                    <input type="text" id="form-subject" class="form-control">
                     <label for="form-subject">Имя</label>
+                    <input type="text" id="form-subject" class="form-control">
                 </div>
-                <div class="md-form md-outline mt-3">
-                    <input type="email" id="form-email" class="form-control">
+                <div class="md-form md-outline my-3">
                     <label for="form-email">E-mail</label>
+                    <input type="email" id="form-email" class="form-control">
                 </div>
                 <div class="md-form md-outline mb-3">
-                    <textarea id="form-message" class="md-textarea form-control" rows="3"></textarea>
                     <label for="form-message">Чем мы вам можем помочь?</label>
+                    <textarea id="form-message" class="md-textarea form-control" rows="3"></textarea>
                 </div>
                 <button type="submit" class="btn btn-tempo  ml-0" style="padding: 13px 35px;">Отправить</button>
             </div>
@@ -458,7 +465,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/index.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/slick.min.js"></script>
