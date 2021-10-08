@@ -48,6 +48,9 @@ header,
     background-image: url(../image/carusel2.jpg) no-repeat;
     opacity: 22;
 } */
+.orange-bg {
+    background-color: #ff6400;
+}
 .btn-orange:hover{
     color: white!important;
 }
