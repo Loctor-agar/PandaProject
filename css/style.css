@@ -2,7 +2,11 @@
 * {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 header,
 /* .view {
     margin-bottom: 100px;
