@@ -316,7 +316,15 @@ header,
     .content .box {
        width: 100%;
     }
-    
+    .main-section {
+        min-height: 55vh!important;
+    }
+    .h100{
+        height: 0%;
+    }
+    .h75 {
+        height: 0%;
+    }
 }
 
 @media screen and (min-width: 1200px){
@@ -499,6 +507,12 @@ a:active, a:hover {
     position: relative;
     left: -4px;
 }
+.h100{
+    height: 100%;
+}
+.h75 {
+    height: 75%;
+}
 .headline:after {
     clear: both;
 }
@@ -583,7 +597,6 @@ a:active, a:hover {
     .counter-txt-l{
         padding-top: 20px;
     }
-
 
 }
 
