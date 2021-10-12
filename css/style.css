@@ -79,6 +79,7 @@ header,
     border: 0;
     -webkit-box-shadow: 0 10px 15px -3px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%);
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%)!important;
+    min-height: 100%;
 }
 .g-4, .gy-4 {
     --mdb-gutter-y: 1.5rem;
@@ -326,10 +327,10 @@ header,
         min-height: 55vh!important;
     }
     .h100{
-        height: 0%;
+        height: auto!important;
     }
     .h75 {
-        height: 0%;
+        height: auto!important;
     }
 }
 
